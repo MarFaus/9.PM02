@@ -31,3 +31,27 @@
 ├── 📊 real_vs_predicted.png   # График: Реальная цена vs Предсказанная
 ├── 📈 feature_importance.png  # График: Топ-10 важных признаков
 └── 📖 README.md               # Документация проекта
+
+
+для послед сохранения
+PowerShell
+# 1. Создаём .gitignore, чтобы не загружать гигабайты виртуального окружения
+Set-Content -Path .gitignore -Value ".venv/`n__pycache__/" -Encoding UTF8
+
+# 2. Инициализируем Git (если ещё не был инициализирован)
+git init
+
+# 3. Индексируем все файлы проекта
+git add .
+
+# 4. Создаём коммит
+git commit -m "feat: add XGBoost car price prediction project with formatted README and plots"
+
+# 5. Устанавливаем основную ветку main
+git branch -M main
+
+# 6. Привязываем твой репозиторий на GitHub
+git remote add origin https://github.com/MarFaus/9.PM02.git
+
+# 7. Отправляем всё на GitHub
+git push -u origin main
